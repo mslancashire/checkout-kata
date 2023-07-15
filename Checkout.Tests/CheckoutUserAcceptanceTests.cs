@@ -136,7 +136,7 @@ namespace Checkout.Tests
 
             var shoppingCartItems = new[]
             {
-                "A", "B", "A", "C", "D", "A", "B", "C", "A", "B", "C"
+                "A", "B", "A", "C", "D", "A", "B", "C", "A", "B", "C", "D", "D"
             };
 
             // act
@@ -146,7 +146,7 @@ namespace Checkout.Tests
             }
 
             // assert
-            sut.GetTotalPrice().Should().Be(325);
+            sut.GetTotalPrice().Should().Be(349);
         }
     }
 }

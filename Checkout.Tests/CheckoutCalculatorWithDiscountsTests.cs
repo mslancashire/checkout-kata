@@ -31,7 +31,7 @@ namespace Checkout.Tests
             const string testSKU = "Test-SKU";
             const int testPrice = 10;
 
-            var items = new[] { CreateCheckoutItem(testSKU, testPrice), CreateCheckoutItem(testSKU, testPrice) };
+            var items = new[] { Helper.CreateCheckoutItem(testSKU, testPrice), Helper.CreateCheckoutItem(testSKU, testPrice) };
 
             MockDiscountFactory
                 .Setup(mock => mock.CreateDiscountRules())
@@ -55,9 +55,9 @@ namespace Checkout.Tests
 
             var items = new[]
             {
-                CreateCheckoutItem(testSKU, testPrice),
-                CreateCheckoutItem(testSKU, testPrice),
-                CreateCheckoutItem(testSKU, testPrice)
+                Helper.CreateCheckoutItem(testSKU, testPrice),
+                Helper.CreateCheckoutItem(testSKU, testPrice),
+                Helper.CreateCheckoutItem(testSKU, testPrice)
             };
 
             MockDiscountFactory

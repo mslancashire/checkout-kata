@@ -3,15 +3,15 @@ using Checkout.Domain;
 using Checkout.Domain.DiscountRules;
 using FluentAssertions;
 
-namespace Checkout.Tests
+namespace Checkout.Tests.DiscountRules
 {
-    public class DiscountRuleTests
+    public class SKUQuantityDiscountRuleTests
     {
         private IDiscount CreateSUT()
         {
             return new SKUQuantityDiscountRule("Buy 2 get £5 off.", "Test-SKU-Discounted", 2, 15);
         }
-        
+
         [Fact]
         public void SKUQuantityDiscountRule_should_not_be_applicable_when_null_cart_is_provided()
         {

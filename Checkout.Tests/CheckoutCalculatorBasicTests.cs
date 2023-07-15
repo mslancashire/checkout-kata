@@ -34,7 +34,7 @@ namespace Checkout.Tests
             const string testSKU = "Test-SKU";
             const int testPrice = 99;
 
-            var items = new[] { CreateCheckoutItem(testSKU, testPrice) };
+            var items = new[] { Helper.CreateCheckoutItem(testSKU, testPrice) };
 
             var sut = CreateSUT();
 
@@ -55,7 +55,7 @@ namespace Checkout.Tests
             const string testSKU_B = "Test-SKU-B";
             const int testPrice_B = 15;
 
-            var items = new[] { CreateCheckoutItem(testSKU_A, testPrice_A), CreateCheckoutItem(testSKU_B, testPrice_B) };
+            var items = new[] { Helper.CreateCheckoutItem(testSKU_A, testPrice_A), Helper.CreateCheckoutItem(testSKU_B, testPrice_B) };
 
             var sut = CreateSUT();
 

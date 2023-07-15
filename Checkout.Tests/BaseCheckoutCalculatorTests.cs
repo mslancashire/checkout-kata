@@ -14,10 +14,5 @@ namespace Checkout.Tests
         }
 
         protected abstract ICheckoutPriceCalculator CreateSUT();
-
-        protected ICheckoutItem CreateCheckoutItem(string sku = "A", int price = 10)
-        {
-            return new CheckoutItem(Guid.NewGuid(), new ProductSKU(sku, price));
-        }
     }
 }

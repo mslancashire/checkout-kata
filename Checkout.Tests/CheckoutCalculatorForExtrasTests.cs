@@ -31,7 +31,7 @@ namespace Checkout.Tests
         public void GetTotalPrice_should_return_correct_value_when_one_bag_is_required_with_one_item_in_checkout()
         {
             // arrange
-            var items = new[] { CreateCheckoutItem() };
+            var items = new[] { Helper.CreateCheckoutItem() };
 
             var sut = CreateSUT();
 
@@ -48,11 +48,11 @@ namespace Checkout.Tests
             // arrange
             var items = new[]
             {
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem()
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem()
             };
 
             var sut = CreateSUT();
@@ -70,12 +70,12 @@ namespace Checkout.Tests
             // arrange
             var items = new[]
             {
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem(),
-                CreateCheckoutItem()
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem(),
+                Helper.CreateCheckoutItem()
             };
 
             var sut = CreateSUT();

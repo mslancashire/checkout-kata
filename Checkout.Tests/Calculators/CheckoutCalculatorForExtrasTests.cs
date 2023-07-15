@@ -2,7 +2,7 @@
 using Checkout.Domain.Calculators;
 using FluentAssertions;
 
-namespace Checkout.Tests
+namespace Checkout.Tests.Calculators
 {
     public class CheckoutCalculatorForExtrasTests : BaseCheckoutCalculatorTests
     {
@@ -17,7 +17,7 @@ namespace Checkout.Tests
         {
             // arrange
             IEnumerable<ICheckoutItem>? items = null;
-            
+
             var sut = CreateSUT();
 
             // act

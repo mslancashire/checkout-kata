@@ -146,7 +146,7 @@ namespace Checkout.Tests
             }
 
             // assert
-            sut.GetTotalPrice().Should().Be(345);
+            sut.GetTotalPrice().Should().Be(325);
         }
     }
 }

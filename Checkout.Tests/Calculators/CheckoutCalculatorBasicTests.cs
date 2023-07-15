@@ -2,7 +2,7 @@
 using Checkout.Domain.Calculators;
 using FluentAssertions;
 
-namespace Checkout.Tests
+namespace Checkout.Tests.Calculators
 {
     public class CheckoutCalculatorBasicTests : BaseCheckoutCalculatorTests
     {

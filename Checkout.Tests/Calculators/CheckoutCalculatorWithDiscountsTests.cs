@@ -3,7 +3,7 @@ using Checkout.Domain.Calculators;
 using Checkout.Domain.DiscountRules;
 using FluentAssertions;
 
-namespace Checkout.Tests
+namespace Checkout.Tests.Calculators
 {
     public class CheckoutCalculatorWithDiscountsTests : BaseCheckoutCalculatorTests
     {
